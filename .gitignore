@@ -1,6 +1,8 @@
+# raw data
+raw_data/
+
 # codebar files
 codebar_data_open.py
-raw_data/london_energy_sample.csv
 
 # Jupyter Notebook
 .ipynb_checkpoints
