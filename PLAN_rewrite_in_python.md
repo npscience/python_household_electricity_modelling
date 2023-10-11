@@ -17,17 +17,19 @@ Steps:
 Create summary df:
 * Take data from above and filter for only Summer 2013 and Winter 2013
 * Create the five summary variables per household, join into one df (1 row per 5,078 hholds * 6 vars inc hhold id)
+* log transform variables (with log(x +1)) as needed - did this for winter_mean_klwh, winter_fold_change, winter_fold_chg_sd in R notebook)
 
 Check for correlations:
 * e.g. corrplot (plot each var against the others, find correlation coefficient)
+
+Dedupe vars:
+* select only the log/non-log version of each of 5 vars
 
 Prep for k-means clustering:
 
 _look up what's needed for python package_
 
 * name the rows by household id (ie lose this as a var)
-* log transform variables (with log(x +1)) as needed - did this for winter_mean_klwh, winter_fold_change, winter_fold_chg_sd in R notebook)
-* select only the log/non-log version of each of 5 vars
 * scale all data (mean = 0, sd = 1, normally distributed)
 
 3. Clustering model
