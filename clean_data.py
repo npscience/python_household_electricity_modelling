@@ -1,6 +1,9 @@
 ## based on original final project script: prepare_household_energy_data.R
 ## to read in raw csv and output cleaned data "daily_energy_all_hholds.csv"
 
+import pandas as pd
+import numpy as np
+
 # read in raw csv
 
 
